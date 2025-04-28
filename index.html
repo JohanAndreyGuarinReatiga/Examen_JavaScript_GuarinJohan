@@ -10,68 +10,63 @@
 <body>
     <section class="section_create">
         <form action="" class="form_creation" id="form_creation">
-        <h1>Create your recipe here</h1>
-        <input type="text" required placeholder="Recipe name here" id="R-name">
-        <input type="text" placeholder="Ingredients here" id="Ingrdts">
-        <input type="text" placeholder="Instructions here" id="Instrcns">
-        <input type="number" id="Time" placeholder="Cook time in minutes" min="0">
-        <input type="number" id="Portions" placeholder="Number of portions" min="0">
-        <div class="form-group">
-            <label for="recipe-hardness"> Select hardness:</label>
-            <select id="recipe-hardness" required>
-                <option value="Hard">Hard</option>
-                <option value="Easy">Easy</option>
-                <option value="Medium">Medium</option>
-            </select>
-        </div>
-        <div class="form-group2">
-            <label for="recipe-dish"> Select type of dish:</label>
-            <select id="recipe-dish" required>
-                <option value="Breakfast">Breakfast</option>
-                <option value="Lunch">Lunch</option>
-                <option value="Dinner">Dinner</option>
-            </select>
-        </div>
-        <div class="form-actions">
-            <button type="submit" class="create-button">Create Recipe</button>
-            <button type="reset" class="reset-button">Reset Form</button>
-        </div>
+            <h1>Create your recipe here</h1>
+            <input type="text" required placeholder="Recipe name here" id="R-name">
+            <input type="text" placeholder="Ingredients here" id="Ingrdts">
+            <input type="text" placeholder="Instructions here" id="Instrcns">
+            <input type="number" id="Time" placeholder="Cook time in minutes" min="0">
+            <input type="number" id="Portions" placeholder="Number of portions" min="0">
+            <div class="form-group">
+                <label for="recipe-hardness"> Select hardness:</label>
+                <select id="recipe-hardness" required>
+                    <option value="Hard">Hard</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                </select>
+            </div>
+            <div class="form-group2">
+                <label for="recipe-dish"> Select type of dish:</label>
+                <select id="recipe-dish" required>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="create-button">Create Recipe</button>
+                <button type="reset" class="reset-button">Reset Form</button>
+            </div>
         </form>
     </section>
     <section class="filters-section">
-        <form action="" class="filters-section" id="filters-section">
-            <h2>Search</h2>
-            <div class="filter-container">
-                <div class="filter-group">
-                    <label for="name-search">Name:</label>
-                    <input type="text" id="name-search" placeholder="Search by name..." required>
-                </div>
-                <div class="filter-group">
-                    <label for="recipe-select">Recipe:</label>
-                    <select id="recipe-select">
-                        <option value="breakfast">Breakfast</option>
-                        <option value="lunch">Lunch</option>
-                        <option value="dinner">Dinner</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="Category-select">Category:</label>
-                    <select id="Category-select">
-                        <option value="easy">Easy</option>
-                        <option value="hard">Hard</option>
-                        <option value="medium">Medium</option>
-                    </select>
-                </div>
-                
-                <button id="apply-filters" class="filter-button">Apply Filters</button>
+        <form action="" class="form_filters" id="filters-section">
+            <h1>Search your recipe</h1>
+            <input type="text" id="name-search" placeholder="Search by name..." required>
+            <div class="filter-group">
+                <label for="recipe-select">Recipe:</label>
+                <select id="recipe-select">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="Category-select">Category:</label>
+                <select id="Category-select">
+                    <option value="easy">Easy</option>
+                    <option value="hard">Hard</option>
+                    <option value="medium">Medium</option>
+                </select>
+            </div>
+            <div>
+                <button id="apply-filters" class="filter-button">Search</button>
                 <button id="reset-filters" class="filter-button reset">Reset</button>
             </div>
-        </section>
         </form>
+    </section>
     <section class="characters-section">
         
         <div id="characters-container" class="characters-container">
-
             <div class="loading">Loading ...</div>
         </div>
     </section>

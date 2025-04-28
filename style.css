@@ -2,8 +2,13 @@
     background-color: rgb(223, 219, 219);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.form_creation,
-.filters-section{
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.form_creation{
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -13,8 +18,18 @@
     justify-self: center;
 }
 
+.form_filters{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 20vh;
+    background-color: rgb(216, 198, 139);
+    border-radius: 20px;
+    justify-self: center;
+}
+
 .form_creation h1,
-.filters-section h2{
+.filters-section h1{
     background-color: transparent;
 }
 
