@@ -1,3 +1,25 @@
 *{
-    margin: 0;
+    background-color: rgb(223, 219, 219);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+.form_creation,
+.filters-section{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(216, 198, 139);
+    border-radius: 20px;
+    justify-self: center;
+}
+
+.form_creation h1,
+.filters-section h2{
+    background-color: transparent;
+}
+
+.form-group select{
+    width: 7vw;
+    background-color: transparent;
+}
+
